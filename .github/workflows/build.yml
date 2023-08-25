@@ -26,7 +26,7 @@ jobs:
       - name: Outstanding Todos
         run: |
           echo Checking for outstanding todos...
-          TODO_COUNT=$(grep -r '[\/\/#] [Tt][Oo][Dd][Oo]' . | wc -l)
+          TODO_COUNT=$(grep -r '[\/\/#] [Tt][Oo][Dd][Oo]' --exclude-dir .git . | wc -l)
           if [[ $TODO_COUNT -gt 0 ]] ; then
             echo "$TODO_COUNT" todos found...
             grep -r '[\/\/#] [Tt][Oo][Dd][Oo]' . 
