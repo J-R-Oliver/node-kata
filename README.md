@@ -55,12 +55,12 @@ messages. The specification provides a simple rule set for creating commit messa
 breaking changes in commit messages.
 
 A [pre-commit](https://pre-commit.com) [configuration file](.pre-commit-config.yaml) has been provided to automate
-commit linting. Ensure that *pre-commit* has been [installed](https://www.conventionalcommits.org/en/v1.0.0/) and
+commit linting. Ensure that _pre-commit_ has been [installed](https://www.conventionalcommits.org/en/v1.0.0/) and
 execute...
 
 ```shell
 pre-commit install
-````
+```
 
 ...to add a commit [Git hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) to your local machine.
 

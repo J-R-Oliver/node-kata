@@ -1,14 +1,14 @@
 {
   "name": "node-kata",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Repository for Node.js katas.",
-  "main": "bin/index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --collectCoverageFrom=./lib/**",
     "lint": "eslint .",
-    "format": "prettier ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check  ."
   },
   "engines": {
     "node": ">=16.0.0"
